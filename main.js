@@ -515,38 +515,39 @@ async function getVul14(url) {
 	}
 	browser.close();
 }
-Promise.all(
-	getVul1("https://us-cert.cisa.gov/ncas/current-activity"),
-	getVul2("https://www.cert.ssi.gouv.fr/2021/"),
-	getVul3("https://access.redhat.com/security/vulnerabilities/"),
-	getVul4(
-		"https://access.redhat.com/errata/#/?q=&p=1&sort=portal_publication_date%20desc&rows=10&portal_advisory_type=Security%20Advisory",
-	),
-	getVul5("https://ubuntu.com/security/notices"),
-	getVul12("https://security.paloaltonetworks.com/?sort=-date"),
-	getVul13("https://security.paloaltonetworks.com/?sort=-updated"),
-	getVul14(
-		"https://new.siemens.com/global/en/products/services/cert.html#SecurityPublications",
-	),
-	getVul10("https://httpd.apache.org/security/vulnerabilities_24.html"),
-	getVul7("https://www.debian.org/security/"),
-	getVul8("https://www.oracle.com/security-alerts/"),
-);
+// Promise.all(
+// 	getVul1("https://us-cert.cisa.gov/ncas/current-activity"),
+// 	getVul2("https://www.cert.ssi.gouv.fr/2021/"),
+// 	getVul3("https://access.redhat.com/security/vulnerabilities/"),
+// 	getVul4(
+// 		"https://access.redhat.com/errata/#/?q=&p=1&sort=portal_publication_date%20desc&rows=10&portal_advisory_type=Security%20Advisory",
+// 	),
+// 	getVul5("https://ubuntu.com/security/notices"),
+// 	getVul12("https://security.paloaltonetworks.com/?sort=-date"),
+// 	getVul13("https://security.paloaltonetworks.com/?sort=-updated"),
+// 	getVul14(
+// 		"https://new.siemens.com/global/en/products/services/cert.html#SecurityPublications",
+// 	),
+// 	getVul10("https://httpd.apache.org/security/vulnerabilities_24.html"),
+// 	getVul7("https://www.debian.org/security/"),
+// getVul8("https://www.oracle.com/security-alerts/"),
+// );
 // getVul1("https://us-cert.cisa.gov/ncas/current-activity");
 // getVul2("https://www.cert.ssi.gouv.fr/2021/");
-// getVul3("https://access.redhat.com/security/vulnerabilities/");
-// getVul4(
-// 	"https://access.redhat.com/errata/#/?q=&p=1&sort=portal_publication_date%20desc&rows=10&portal_advisory_type=Security%20Advisory",
-// );
-// getVul5("https://ubuntu.com/security/notices");
 // getVul6("https://support.apple.com/fr-fr/HT201222"); ********
-// getVul7("https://www.debian.org/security/");
-// getVul8("https://www.oracle.com/security-alerts/");
+getVul3("https://access.redhat.com/security/vulnerabilities/");
+getVul4(
+	"https://access.redhat.com/errata/#/?q=&p=1&sort=portal_publication_date%20desc&rows=10&portal_advisory_type=Security%20Advisory",
+);
+getVul5("https://ubuntu.com/security/notices");
+
+getVul7("https://www.debian.org/security/");
+getVul8("https://www.oracle.com/security-alerts/");
 // getVul9("https://www.vmware.com/security/advisories.html"); ***********
-// getVul10("https://httpd.apache.org/security/vulnerabilities_24.html");
+// getVul10("https://httpd.apache.org/security/vulnerabilities_24.html"); *******
 // getVul11("https://www.fortiguard.com/psirt");*****************************
-// getVul12("https://security.paloaltonetworks.com/?sort=-date");
-// getVul13("https://security.paloaltonetworks.com/?sort=-updated");
-// getVul14(
-// 	"https://new.siemens.com/global/en/products/services/cert.html#SecurityPublications",
-// );
+getVul12("https://security.paloaltonetworks.com/?sort=-date");
+getVul13("https://security.paloaltonetworks.com/?sort=-updated");
+getVul14(
+	"https://new.siemens.com/global/en/products/services/cert.html#SecurityPublications",
+);
